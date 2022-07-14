@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;800&display=swap');
+body {
+	font-family: 'Poppins', sans-serif;
+	overflow: hidden;
+	display: none;
+	color: #000000;
+	background-color: rgba(20, 20, 20, 0.85);
+}
+.form{
+	width: 740px;
+	height: 660px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	transform-origin: center;
+}
+.background{
+	width: 320px;
+	height: 660px;
+	background: url('bg.png');
+	float: left;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+.dialog{
+	width: 420px;
+	height: 660px;
+	background-color: #fff;
+	display: inline-block;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+.group{
+	width: 313px;
+	margin: auto;
+	height: 66px;
+	position: relative;
+	padding: 20px 0 0 0;
+}
+.group label{
+	display: block;
+	width: 100%;
+	font-size: 12px;
+	font-weight: 300;
+}
+.group input{
+	position: absolute;
+	bottom: 0;
+	display: block;
+	width: 100%;
+	border-radius: 5px;
+	background: transparent;
+	border: 1px solid #000;
+	height: 44px;
+	opacity: 0.7;
+	font-family: 'Poppins', sans-serif;
+	padding: 0 10px 0 10px;
+	font-weight: 300;
+}
+.group input:focus{
+	outline: none;
+}
+.sex-radio{
+	line-height: 25px;
+}
+.sex-radio label{
+	width: auto;
+	display: inline-block;
+	margin-left: 10px;
+}
+input[type='radio']{
+	padding: 0;
+	margin: 0;
+	float: left;
+	position: relative;
+	-webkit-appearance: none;
+	width: 14px;
+	height: 14px;
+	border-radius: 50%;
+	top: 5px;
+}
+input[type='radio']:after {
+	width: 14px;
+	height: 14px;
+	content: '';
+	display: inline-block;
+	visibility: visible;
+	-webkit-appearance: none;
+}
+
+input[type='radio']:checked:after {
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	background-color: #000000;
+	-webkit-appearance: none;
+}
+.title-container{
+	padding: 32px;
+}
+.title-container p{
+	text-align: center;
+	margin: 0;
+}
+.title{
+	font-size: 24px;
+	font-weight: 800;
+}
+.desc{
+	font-size: 18px;
+	font-weight: 400;
+}
+button[type='submit']{
+	width: 315px;
+	height: 47px;
+	font-size: 18px;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+	border-radius: 50px;
+	border: none;
+	background: linear-gradient(45deg, #4776E6, #8E54E9);
+	color: #fff;
+	display: block;
+	margin: 30px auto 30px auto;
+}
+button[type='submit']:hover{
+	border: none;
+	outline: none;
+	background: linear-gradient(45deg, #547fe2, #9967e9);
+}
+button[type='submit']:focus{
+	border: none;
+	outline: none;
+}
+@media only screen and (max-width: 1280px) {
+	.form{
+		transform: scale(0.8) translate(-60%, -60%);
+	}
+}
+@media only screen and (max-width: 800px) {
+	.form{
+		transform: scale(0.6) translate(-80%, -80%);
+	}
+}
